@@ -1,0 +1,98 @@
+@viewport{
+    zoom: 1.0;
+    width: device-width;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0 auto;
+  color: #000000;
+  background: #ffffff;
+  font-family: 'arial', sans-serif;
+  font-size: small;
+}
+
+p, h2
+{
+    margin: 0;
+}
+
+
+#wrapper
+{
+  display: grid;
+  grid-gap: 10px;
+	grid-template-rows: min-content auto min-content;
+	grid-template-columns: min-content auto;
+	height: 100vh;
+}
+
+#body_header
+{
+  grid-column: 1 / span 2;
+}
+
+#sidebar
+{
+  overflow-y: auto;
+  grid-column: 1 / span 1;
+}
+
+#main
+{
+  overflow-y: auto;
+  grid-column: 2 / span 1;
+}
+
+#body_footer
+{
+  grid-column: 1 / span 2;
+}
+
+
+
+#wrapper
+{
+  background-color: beige;
+  padding: 10px;
+}
+
+#body_header
+{
+  background-color: coral;
+  padding: inherit;
+}
+
+#sidebar
+{
+  background-color: yellow;
+  padding: inherit;
+}
+
+#main
+{
+  background-color: lightgreen;
+  padding: inherit;
+}
+
+#body_footer
+{
+  background: skyblue;
+  padding: inherit;
+}
+
+.nav_ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_ul li            { display: inline;  }
+.nav_ul li a          { color: blue;      }
+.nav_ul li a:hover    { color: orange;    }
+.nav_ul li a:active   { color: green;     }
+.nav_ul li a:visited  { color: blue;      }
